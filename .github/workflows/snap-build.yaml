@@ -122,7 +122,7 @@ jobs:
         uses: snapcore/action-build@v1
         with:
           snapcraft-channel: 7.x/edge
-          snapcraft-args: --verbosity=verbose
+          snapcraft-args: --verbosity=verbose --enable-experimental-plugins
   build_22_riscv64_nezha_latest:
     name: latest/edge job for 22-riscv64-nezha snap
     runs-on: ubuntu-22.04
@@ -135,7 +135,7 @@ jobs:
         uses: snapcore/action-build@v1
         with:
           snapcraft-channel: latest/edge
-          snapcraft-args: --verbosity=verbose
+          snapcraft-args: --verbosity=verbose --enable-experimental-plugins
 
   build_22_riscv64_polarfire_7:
     name: 7.x/edge job for 22-riscv64-polarfire snap
